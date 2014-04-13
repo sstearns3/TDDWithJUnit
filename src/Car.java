@@ -45,4 +45,8 @@ public class Car {
 		return("Color: " + color + ", Speed: " + maxSpeed);
 	}
 
+	public void decelerate(int amount) {
+		speed = maxSpeed - amount;
+		
+	}
 }
