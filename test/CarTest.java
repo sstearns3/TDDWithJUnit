@@ -32,7 +32,12 @@ public class CarTest {
 	}
 
 	// Create and pass test for deceleration.
-	
+	@Test
+	public void canDecelerate(){
+		Car car2 = new Car("Blue", 100);
+		car2.decelerate(50);
+		assertThat(car2.getSpeed(), is(50));
+	}
 	// Create and pass test for no deceleration below 0.
 
 	
